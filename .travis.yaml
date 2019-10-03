@@ -1,0 +1,16 @@
+dist: xenail
+language: go
+
+go:
+ - 1.12.7
+ 
+ sudo: required
+
+os:
+ - linux
+ - linux-ppc64le
+ 
+ 
+script:
+ - sudo apt-get update && sudo apt-get install -y lsscsi
+ - sudo lsscsi
